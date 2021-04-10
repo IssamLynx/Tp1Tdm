@@ -1,12 +1,13 @@
 package exo3
 
-import java.util.*
+import java.time.LocalDate
 
-class Patient(private var userId:String,private var firstName:String,private var lastName:String,
-              private var userName:String,private var password:String,private var birthDate: Date,
-              private var address:String,private var gender:String,private var phone:String,
-              private var email:String,private var weight:Float,private var height:Int,
-              private var bloodType:String, private var personalDisease:String):
+data class Patient( var userId:String, var firstName:String, var lastName:String,
+               var userName:String, var password:String, var birthDate: LocalDate,
+               var address:String, var gender:String, var phone:String,
+               var email:String, var weight:Float, var height:Int,
+               var bloodType:String,  var personalDisease:String):
               User(userId,firstName,lastName,userName,password,birthDate,address,gender,phone,email) {
 
               }
+

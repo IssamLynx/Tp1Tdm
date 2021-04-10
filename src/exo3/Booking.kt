@@ -1,10 +1,11 @@
 package exo3
 
 import java.sql.Time
-import java.util.*
+import java.time.LocalDate
+import java.time.LocalTime
 
-class Booking(private var bookingId:Long,private var bookingDate:Date,private var bookingTime:Time,
-              private var patient:Patient,private var treatment:Treatment) {
+data class Booking( val bookingId:Long, var bookingDate:LocalDate, var bookingTime:LocalTime,
+               var patient:Patient,var doctor:Doctor) {
 
 
 

@@ -1,7 +1,7 @@
 package exo3
 
-import java.util.*
+import java.time.LocalDate
 
-class Treatment(private var treatmentId:Long,private var disease:String,private var treatmentDescription:String,
-                treatmentDate:Date) {
+data class Treatment( var treatmentId:Long, var disease:String, var treatmentDescription:String,
+                var treatmentDate:LocalDate,var booking:Booking) {
 }
